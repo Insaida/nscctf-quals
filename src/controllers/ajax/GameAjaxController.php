@@ -104,7 +104,7 @@ class GameAjaxController extends AjaxController {
       case 'set_livesync_password':
         $livesync_password_update = await Team::genSetLiveSyncPassword(
           SessionUtils::sessionTeam(),
-          "fbctf",
+          "nscctf",
           must_have_string($params, 'livesync_username'),
           must_have_string($params, 'livesync_password'),
         );

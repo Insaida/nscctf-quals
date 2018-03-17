@@ -1,6 +1,6 @@
 <?hh
 
-class LinkTest extends FBCTFTest {
+class LinkTest extends nscctfTest {
 
   public function testAllLinks(): void {
     $all = HH\Asio\join(Link::genAllLinks(1));

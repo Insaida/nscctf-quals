@@ -1,7 +1,7 @@
 <?hh // strict
 
 class SessionUtils {
-  private static string $s_name = 'FBCTF';
+  private static string $s_name = 'nscctf';
   private static int $s_lifetime = 3600;
   private static bool $s_secure = true;
   private static bool $s_httponly = true;

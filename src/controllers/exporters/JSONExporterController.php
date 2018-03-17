@@ -7,7 +7,7 @@ class JSONExporterController {
 
   public static function sendJSON(
     mixed $data,
-    string $json_file = 'fbctf.json',
+    string $json_file = 'nscctf.json',
   ): void {
     header('Content-Type: application/json;charset=utf-8');
     header('Content-Disposition: attachment; filename='.$json_file);

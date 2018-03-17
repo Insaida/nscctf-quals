@@ -5,14 +5,14 @@ $translations = array(
   'date and time format' =>
     'H:i:s D d/m/Y', //used by date() function
   //Translations for IndexController
-  'Facebook CTF' =>
-    'Facebook CTF',
+  'NaijaSecCon CTF' =>
+    'NaijaSecCon CTF',
   'Conquer the world' =>
     'Konkistatzen mundu',
   'Play' =>
     'Play',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
-    'Ongi etorri Facebook Capture bandera Lehiaketan. Beheko "Play," zuk egingo dira CTF erronka ofiziala sartu. Zorte ona zure konkista.',
+  'Welcome to the Qualifing Rounds for the NaijaSecCon Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+    'Ongi etorri NaijaSecCon Capture bandera Lehiaketan. Beheko "Play," zuk egingo dira CTF erronka ofiziala sartu. Zorte ona zure konkista.',
   'Get ready for the CTF to start and access the gameboard now!' =>
     'Talde CTF hasteko eta sartzeko gameboard orain prest!',
   'Gameboard' =>
@@ -65,8 +65,8 @@ $translations = array(
     'Lege',
   'Disclaimer' =>
     'Lege-oharra',
-  'By participating in the contest, you agree to release Facebook and its employees, and the hosting organization from any and all liability, claims or actions of any kind whatsoever for injuries, damages or losses to persons and property which may be sustained in connection with the contest. You acknowledge and agree that Facebook et al is not responsible for technical, hardware or software failures, or other errors or problems which may occur in connection with the contest.' =>
-    'lehiaketan parte hartuz, Facebook eta bere langile, eta hosting erakundearen askatzeko edozein eta guztiak erantzukizunik, erreklamazio edo edozein motatako ekintzak ezgaitasunaren lesioak, kalteak edo galerak pertsonen eta ondasunen zein konexio iraunkorra daitezke for from onartzen duzu lehiaketa. Onartzen duzu eta ados Facebook et al, ez da tekniko, hardware edo software hutsegiteak, edo beste akatsak edo bertan daiteke lehiaketaren lotuta gertatzen arazoak erantzule.',
+  'By participating in the contest, you agree to release NaijaSecCon and its employees, and the hosting organization from any and all liability, claims or actions of any kind whatsoever for injuries, damages or losses to persons and property which may be sustained in connection with the contest. You acknowledge and agree that Facebook et al is not responsible for technical, hardware or software failures, or other errors or problems which may occur in connection with the contest.' =>
+    'lehiaketan parte hartuz, NaijaSecCon eta bere langile, eta hosting erakundearen askatzeko edozein eta guztiak erantzukizunik, erreklamazio edo edozein motatako ekintzak ezgaitasunaren lesioak, kalteak edo galerak pertsonen eta ondasunen zein konexio iraunkorra daitezke for from onartzen duzu lehiaketa. Onartzen duzu eta ados Facebook et al, ez da tekniko, hardware edo software hutsegiteak, edo beste akatsak edo bertan daiteke lehiaketaren lotuta gertatzen arazoak erantzule.',
   'If you have any questions about what is or is not allowed, please ask an organizer.' =>
     'zer da edo ez da onartzen buruzko edozein zalantza izanez gero, galdetu du antolatzaile.',
   'Have fun!' =>
@@ -672,8 +672,8 @@ $translations = array(
     'Hurrengoa',
   'Skip to play' =>
     'Skip to play',
-  'Powered By Facebook' =>
-    'Nork Facebook By',
+  'Powered By NaijaSecCon' =>
+    'Nork NaijaSecCon By',
   'Active Directory / LDAP' =>
     'Active Directory / LDAP',
   'LDAP Server' =>

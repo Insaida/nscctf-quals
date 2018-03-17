@@ -1,6 +1,6 @@
 <?hh
 
-class AnnouncementTest extends FBCTFTest {
+class AnnouncementTest extends nscctfTest {
 
   public function testAllAnnouncements(): void {
     $all = HH\Asio\join(Announcement::genAllAnnouncements());

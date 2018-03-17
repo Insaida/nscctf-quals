@@ -1,6 +1,6 @@
 {
     "name": "facebook/fbctf",
-    "description": "Facebook CTF platform",
+    "description": "NaijaSecCon CTF platform",
     "license": "CC-BY-NC-4.0",
     "require": {
         "facebook/xhp-lib": "2.x",

@@ -2,7 +2,7 @@
 
 class Attachment extends Model {
   // TODO: Configure this
-  const string attachmentsDir = '/var/www/fbctf/attachments/';
+  const string attachmentsDir = '/var/www/nscctf/attachments/';
 
   protected static string $MC_KEY = 'attachments:';
 

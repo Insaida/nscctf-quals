@@ -5,13 +5,13 @@ $translations = array(
   'date and time format' =>
     'H:i:s D m/d/Y', //used by date() function
   //Translations for IndexController
-  'Facebook CTF' =>
-    'Facebook CTF',
+  'NaijaSecCon CTF' =>
+    'NaijaSecCon CTF',
   'Conquer the world' =>
     'تسخیر جهان',
   'Play' =>
     'بازی کنید',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the NaijaSecCon Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
     'به رقابت فتح پرچم فیسبوک خوش آمدید. با کلیک روی دکمه "بازی کنید" به محیط مسابقه وارد خواهید شد. در رقابتتان موفق باشید.',
   'Get ready for the CTF to start and access the gameboard now!' =>
     'برای شروع مسابقه آماده شوید و هم‌اکنون به صفحه ‌بازی بروید!',
@@ -672,7 +672,7 @@ $translations = array(
     'بعدی',
   'Skip to play' =>
     'پرش به بازی',
-  'Powered By Facebook' =>
+  'Powered By NaijaSecCon' =>
     'با پشتیبانی فیسبوک',
   'Active Directory / LDAP' =>
     'Active Directory / LDAP',

@@ -1,6 +1,6 @@
 <?hh
 
-class CategoryTest extends FBCTFTest {
+class CategoryTest extends nscctfTest {
 
   public function testAllCategories(): void {
     $all = HH\Asio\join(Category::genAllCategories());

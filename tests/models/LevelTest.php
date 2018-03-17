@@ -1,6 +1,6 @@
 <?hh
 
-class LevelTest extends FBCTFTest {
+class LevelTest extends nscctfTest {
 
   public function testWhoUses(): void {
     $l = HH\Asio\join(Level::genWhoUses(1));

@@ -1,5 +1,5 @@
 # -------------------------------------------------------------
-# BASE: Simple script to score points for the facebook CTF
+# BASE: Simple script to score points for the NaijaSecCon CTF
 # -------------------------------------------------------------
 #
 # Written by Javier (@javutin)

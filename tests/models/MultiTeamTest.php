@@ -1,6 +1,6 @@
 <?hh
 
-class MultiTeamTest extends FBCTFTest {
+class MultiTeamTest extends nscctfTest {
 
   public function testAll(): void {
     $all = HH\Asio\join(MultiTeam::genAllTeams());

@@ -2,7 +2,7 @@
 
 set -e
 
-chown -R www-data:www-data /var/www/fbctf
+chown -R www-data:www-data /var/www/nscctf
 sudo -u www-data service hhvm restart
 
 while true; do

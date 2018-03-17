@@ -1,6 +1,6 @@
 <?hh
 
-class FailureLogTest extends FBCTFTest {
+class FailureLogTest extends nscctfTest {
 
 	/**
 	 * @covers FailureLog::genAllFailures

@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: fbctf
+-- Host: localhost    Database: nscctf
 -- ------------------------------------------------------
 -- Server version	5.5.44-0ubuntu0.14.04.1
 
@@ -16,14 +16,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `fbctf`
+-- Current Database: `nscctf`
 --
 
-/*!40000 DROP DATABASE IF EXISTS `fbctf`*/;
+/*!40000 DROP DATABASE IF EXISTS `nscctf`*/;
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `fbctf` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `nscctf` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `fbctf`;
+USE `nscctf`;
 
 --
 -- Table structure for table `levels`
@@ -263,8 +263,8 @@ INSERT INTO `configuration` (field, value, description) VALUES("language", "en",
 INSERT INTO `configuration` (field, value, description) VALUES("livesync", "0", "(Boolean) LiveSync functionality");
 INSERT INTO `configuration` (field, value, description) VALUES("livesync_auth_key", "", "(String) Optional LiveSync Auth Key");
 INSERT INTO `configuration` (field, value, description) VALUES("custom_logo", "0", "(Boolean) Custom branding logo");
-INSERT INTO `configuration` (field, value, description) VALUES("custom_org", "Facebook", "(String) Custom branding organization text");
-INSERT INTO `configuration` (field, value, description) VALUES("custom_byline", "Powered By Facebook", "(String) Custom branding byline text");
+INSERT INTO `configuration` (field, value, description) VALUES("custom_org", "NaijaSecCon", "(String) Custom branding organization text");
+INSERT INTO `configuration` (field, value, description) VALUES("custom_byline", "Powered By NaijaSecCon", "(String) Custom branding byline text");
 INSERT INTO `configuration` (field, value, description) VALUES("custom_logo_image", "static/img/favicon.png", "(String) Custom logo image file");
 UNLOCK TABLES;
 

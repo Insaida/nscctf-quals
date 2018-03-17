@@ -13,7 +13,7 @@ fi
 chown -R mysql:mysql /var/lib/mysql
 chown -R mysql:mysql /var/run/mysqld
 chown -R mysql:mysql /var/log/mysql
-chown -R www-data:www-data /var/www/fbctf
+chown -R www-data:www-data /var/www/nscctf
 
 sudo -u www-data service hhvm restart
 service nginx restart

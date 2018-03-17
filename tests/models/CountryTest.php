@@ -1,6 +1,6 @@
 <?hh
 
-class CountryTest extends FBCTFTest {
+class CountryTest extends nscctfTest {
 
   public function testUsedAdjust(): void {
     HH\Asio\join(Country::genUsedAdjust());

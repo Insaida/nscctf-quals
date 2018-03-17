@@ -1,6 +1,6 @@
 <?hh
 
-class PasswordTypesTest extends FBCTFTest {
+class PasswordTypesTest extends nscctfTest {
 
   public function testAll(): void {
     $all = HH\Asio\join(Configuration::genAllPasswordTypes());

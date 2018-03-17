@@ -1,6 +1,6 @@
 <?hh
 
-abstract class FBCTFTest
+abstract class nscctfTest
   extends PHPUnit_Extensions_Database_TestCase {
 
   static private $pdo = null;

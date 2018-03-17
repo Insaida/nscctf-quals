@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# fbctf formatting script
+# nscctf formatting script
 #
 # Usage: format.sh [-h|--help] [ARGUMENT]
 #
@@ -8,18 +8,18 @@
 #   -h, --help            Shows this help message and exit.
 #
 # Optional Parameters:
-#   PATH                  Path to fbctf code.
+#   PATH                  Path to nscctf code.
 
 SRC_LOCATION="/vagrant/src"
 IGNORE_FILES=("language/language.php")
 
 function usage() {
-  printf "\nfbctf formatting script\n"
+  printf "\nnscctf formatting script\n"
   printf "\nUsage: %s [-h|--help] [ARGUMENT] \n" "${0}"
   printf "\nParameters:\n"
   printf "  -h, --help \t\tShows this help message and exit.\n"
   printf "\nOptional Arguments:\n"
-  printf "  PATH \tPath to fbctf code.\n"
+  printf "  PATH \tPath to nscctf code.\n"
 }
 
 if [[ "$1" == "-h" || "$1" == "--help" ]]

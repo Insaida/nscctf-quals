@@ -441,41 +441,41 @@ class Control extends Model {
     $game['categories'] = $awaitables['categories'];
     $game['levels'] = $awaitables['levels'];
 
-    $output_file = 'fbctf_game.json';
+    $output_file = 'nscctf_game.json';
     JSONExporterController::sendJSON($game, $output_file);
     exit();
   }
 
   public static async function exportTeams(): Awaitable<void> {
     $teams = await Team::exportAll();
-    $output_file = 'fbctf_teams.json';
+    $output_file = 'nscctf_teams.json';
     JSONExporterController::sendJSON($teams, $output_file);
     exit();
   }
 
   public static async function exportLogos(): Awaitable<void> {
     $logos = await Logo::exportAll();
-    $output_file = 'fbctf_logos.json';
+    $output_file = 'nscctf_logos.json';
     JSONExporterController::sendJSON($logos, $output_file);
     exit();
   }
 
   public static async function exportLevels(): Awaitable<void> {
     $levels = await Level::exportAll();
-    $output_file = 'fbctf_levels.json';
+    $output_file = 'nscctf_levels.json';
     JSONExporterController::sendJSON($levels, $output_file);
     exit();
   }
 
   public static async function exportCategories(): Awaitable<void> {
     $categories = await Category::exportAll();
-    $output_file = 'fbctf_categories.json';
+    $output_file = 'nscctf_categories.json';
     JSONExporterController::sendJSON($categories, $output_file);
     exit();
   }
 
   public static async function exportAttachments(): Awaitable<void> {
-    $filename = 'fbctf-attachments-'.date("d-m-Y").'.tgz';
+    $filename = 'nscctf-attachments-'.date("d-m-Y").'.tgz';
     header('Content-Type: application/x-tgz');
     header('Content-Disposition: attachment; filename="'.$filename.'"');
     $document_root = must_have_string(Utils::getSERVER(), 'DOCUMENT_ROOT');
@@ -486,7 +486,7 @@ class Control extends Model {
   }
 
   public static async function backupDb(): Awaitable<void> {
-    $filename = 'fbctf-backup-'.date("d-m-Y").'.sql.gz';
+    $filename = 'nscctf-backup-'.date("d-m-Y").'.sql.gz';
     header('Content-Type: application/x-gzip');
     header('Content-Disposition: attachment; filename="'.$filename.'"');
     $cmd = Db::getInstance()->getBackupCmd().' | gzip --best';

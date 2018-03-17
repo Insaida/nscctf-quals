@@ -7,7 +7,7 @@
 
 set -e
 
-DB="fbctftests"
+DB="nscctftests"
 CODE_PATH=${1:-/vagrant}
 DB_USER=${2:-root}
 DB_PWD=${3:-root}

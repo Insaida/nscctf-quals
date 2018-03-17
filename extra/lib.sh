@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Facebook CTF: Functions for provisioning scripts
+# NaijaSecCon CTF: Functions for provisioning scripts
 #
 
 function log() {
@@ -104,7 +104,7 @@ function self_signed_cert() {
   local __devcert=$1
   local __devkey=$2
 
-  sudo openssl req -nodes -newkey rsa:2048 -keyout "$__devkey" -out "$__csr" -subj "/O=Facebook CTF"
+  sudo openssl req -nodes -newkey rsa:2048 -keyout "$__devkey" -out "$__csr" -subj "/O=NaijaSecCon CTF"
   sudo openssl x509 -req -days 365 -in "$__csr" -signkey "$__devkey" -out "$__devcert"
 }
 
@@ -175,8 +175,8 @@ function install_nginx() {
     local __key="$__certs_path/dev.key"
     self_signed_cert "$__cert" "$__key"
   elif [[ "$__mode" = "prod" ]]; then
-    local __cert="$__certs_path/fbctf.crt"
-    local __key="$__certs_path/fbctf.key"
+    local __cert="$__certs_path/nscctf.crt"
+    local __key="$__certs_path/nscctf.key"
     case "$__certs" in
       self)
         self_signed_cert "$__cert" "$__key"
@@ -205,13 +205,13 @@ function install_nginx() {
   sudo openssl dhparam -out "$__dhparam" 2048
 
   if [[ "$__multiservers" == true ]]; then
-      cat "$__path/extra/nginx/nginx.conf" | sed "s|CTFPATH|$__path/src|g" | sed "s|CER_FILE|$__cert|g" | sed "s|KEY_FILE|$__key|g" | sed "s|DHPARAM_FILE|$__dhparam|g" | sed "s|HHVMSERVER|$__hhvmserver|g" | sudo tee /etc/nginx/sites-available/fbctf.conf
+      cat "$__path/extra/nginx/nginx.conf" | sed "s|CTFPATH|$__path/src|g" | sed "s|CER_FILE|$__cert|g" | sed "s|KEY_FILE|$__key|g" | sed "s|DHPARAM_FILE|$__dhparam|g" | sed "s|HHVMSERVER|$__hhvmserver|g" | sudo tee /etc/nginx/sites-available/nscctf.conf
   else
-      cat "$__path/extra/nginx.conf" | sed "s|CTFPATH|$__path/src|g" | sed "s|CER_FILE|$__cert|g" | sed "s|KEY_FILE|$__key|g" | sed "s|DHPARAM_FILE|$__dhparam|g" | sudo tee /etc/nginx/sites-available/fbctf.conf
+      cat "$__path/extra/nginx.conf" | sed "s|CTFPATH|$__path/src|g" | sed "s|CER_FILE|$__cert|g" | sed "s|KEY_FILE|$__key|g" | sed "s|DHPARAM_FILE|$__dhparam|g" | sudo tee /etc/nginx/sites-available/nscctf.conf
   fi
 
   sudo rm -f /etc/nginx/sites-enabled/default
-  sudo ln -sf /etc/nginx/sites-available/fbctf.conf /etc/nginx/sites-enabled/fbctf.conf
+  sudo ln -sf /etc/nginx/sites-available/nscctf.conf /etc/nginx/sites-enabled/nscctf.conf
 
   if [[ "$__multiservers" == false ]]; then
       # Restart nginx
@@ -326,7 +326,7 @@ function import_empty_db() {
   local PASSWORD
   log "Adding default admin user"
   if [[ $__mode = "dev" ]]; then
-    PASSWORD='password'
+    PASSWORD='delemomodu'
   else
     PASSWORD=$(head -c 500 /dev/urandom | md5sum | cut -d" " -f1)
   fi
@@ -419,8 +419,8 @@ function quick_setup() {
   elif [[ "$__type" = "start_docker" ]]; then
     package_repo_update
     package docker-ce
-    sudo docker build --build-arg MODE=$__mode -t="fbctf-image" .
-    sudo docker run --name fbctf -p 80:80 -p 443:443 fbctf-image
+    sudo docker build --build-arg MODE=$__mode -t="nscctf-image" .
+    sudo docker run --name nscctf -p 80:80 -p 443:443 nscctf-image
   elif [[ "$__type" = "start_docker_multi" ]]; then
     package_repo_update
     package python-pip
@@ -439,7 +439,7 @@ function quick_setup() {
     vagrant up
   elif [[ "$__type" = "start_vagrant_multi" ]]; then
     cp Vagrantfile-multi Vagrantfile
-    export FBCTF_PROVISION_ARGS="-m $__mode"
+    export NSCCTF_PROVISION_ARGS="-m $__mode"
     vagrant up
   fi
 }

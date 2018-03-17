@@ -1,6 +1,6 @@
 <?hh
 
-class ProgressiveTest extends FBCTFTest {
+class ProgressiveTest extends nscctfTest {
 
   public function testProgressiveScoreboard(): void {
     $all = HH\Asio\join(Progressive::genProgressiveScoreboard('team'));

@@ -1,12 +1,12 @@
-# FBCTF [![Build Status](https://travis-ci.org/facebook/fbctf.svg)](https://travis-ci.org/facebook/fbctf)
+# nscctf [![Build Status](https://travis-ci.org/facebook/fbctf.svg)](https://travis-ci.org/facebook/fbctf)
 
-## What is FBCTF?
+## What is nscctf?
 
 The Facebook CTF is a platform to host Jeopardy and “King of the Hill” style Capture the Flag competitions.
 
 <div align="center"><img src="screencapture.gif" /></div>
 
-## How do I use FBCTF?
+## How do I use nscctf?
 
 * Organize a competition. This can be done with as few as two participants, all the way up to several hundred. The participants can be physically present, active online, or a combination of the two.
 * Follow setup instructions below to spin up platform infrastructure.
@@ -18,7 +18,7 @@ For more information, see the [Admin Guide](https://github.com/facebook/fbctf/wi
 
 # Installation
 
-The FBCTF platform was designed with flexibility in mind, allowing for different types of installations depending on the needs of the end user. The FBCTF platform can be installed either in Development Mode, or Production Mode.
+The nscctf platform was designed with flexibility in mind, allowing for different types of installations depending on the needs of the end user. The nscctf platform can be installed either in Development Mode, or Production Mode.
 
 [Quick Setup Guide](https://github.com/facebook/fbctf/wiki/Quick-Setup-Guide) (_Recommended Installation_)
 
@@ -34,7 +34,7 @@ If you have issues installing the platform, please provide the entire output of 
 
 You’ve used it, now you want to make it better? Awesome! Pull requests are welcome! Click [here](https://github.com/facebook/fbctf/blob/master/CONTRIBUTING.md) to find out how to contribute.
 
-Facebook also has [bug bounty program](https://www.facebook.com/whitehat/) that includes FBCTF. If you find a security vulnerability in the platform, please submit it via the process outlined on that page and do not file a public issue.
+Facebook also has [bug bounty program](https://www.facebook.com/whitehat/) that includes nscctf. If you find a security vulnerability in the platform, please submit it via the process outlined on that page and do not file a public issue.
 
 Feel free to join our slack by registering your email here: https://fbctf-slack.herokuapp.com/
 

@@ -1,6 +1,6 @@
 <?hh
 
-class ConfigurationTest extends FBCTFTest {
+class ConfigurationTest extends nscctfTest {
 
   public function testAllConfiguration(): void {
     $all = HH\Asio\join(Configuration::genAllConfiguration());

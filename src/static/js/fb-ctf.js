@@ -48,7 +48,7 @@ function activateTeams() {
     var team = String($(this).data('team'));
 
     if (team === undefined || team === "") {
-      team = "Facebook CTF";
+      team = "NaijaSecCon CTF";
     }
     var teamData = FB_CTF.data.TEAMS[team];
     if (teamData === undefined) {

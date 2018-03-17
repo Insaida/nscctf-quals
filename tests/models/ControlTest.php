@@ -1,6 +1,6 @@
 <?hh
 
-class ControlTest extends FBCTFTest {
+class ControlTest extends nscctfTest {
 
   public function testAll(): void {
     /*$all = HH\Asio\join(FailureLog::genAllFailures());

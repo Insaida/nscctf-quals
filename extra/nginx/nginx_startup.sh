@@ -6,7 +6,7 @@ if [[ -e /root/tmp/certbot.sh ]]; then
     /bin/bash /root/tmp/certbot.sh
 fi
 
-chown -R www-data:www-data /var/www/fbctf
+chown -R www-data:www-data /var/www/nscctf
 service nginx restart
 
 while true; do

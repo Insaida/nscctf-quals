@@ -3908,7 +3908,7 @@ class AdminController extends Controller {
     $all_sessions = await Session::genAllSessions();
     foreach ($all_sessions as $session) {
       /* HH_IGNORE_ERROR[2050] */
-      $cookie = $_COOKIE['FBCTF'];
+      $cookie = $_COOKIE['nscctf'];
       if ($cookie === $session->getCookie()) {
         $session_data = await Session::genSessionDataIfExist($cookie); // TODO: Combine Awaits
         await Session::genSetTeamId($cookie, $session_data); // TODO: Combine Awaits

@@ -1,6 +1,6 @@
 <?hh
 
-class AttachmentTest extends FBCTFTest {
+class AttachmentTest extends nscctfTest {
 
   public function testAllAttachments(): void {
     $all = HH\Asio\join(Attachment::genAllAttachments(1));

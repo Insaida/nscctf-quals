@@ -11,7 +11,7 @@ $translations = array(
     'Conquereix el món',
   'Play' =>
     'Jugar',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the Qualifing Rounds for the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
     'Benvingut al "Capture The Flag" de Facebook. Premeu el botó de "a jugar" per entrar al CTF. Bona sort en la conquesta.',
   'Get ready for the CTF to start and access the gameboard now!' =>
     'Prepara\'t a que comenci el CTF i accedeix al taulell de joc ara!',

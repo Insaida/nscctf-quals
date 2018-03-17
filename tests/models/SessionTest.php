@@ -1,6 +1,6 @@
 <?hh
 
-class SessionTest extends FBCTFTest {
+class SessionTest extends Test {
 
   public function testAll(): void {
     $all = HH\Asio\join(Session::genAllSessions());

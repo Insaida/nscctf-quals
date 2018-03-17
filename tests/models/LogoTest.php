@@ -1,6 +1,6 @@
 <?hh
 
-class LogoTest extends FBCTFTest {
+class LogoTest extends nscctfTest {
 
   public function testAllLogos(): void {
     $all = HH\Asio\join(Logo::genAllLogos());

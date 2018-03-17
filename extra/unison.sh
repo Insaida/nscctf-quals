@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Facebook CTF: Script to install unison. Valid version: 2.48.4
+# NaijaSecCon CTF: Script to install unison. Valid version: 2.48.4
 # https://keylocation.sg/blog/vagrant-and-unison-without-a-plugin/
 #
 # Usage: ./unison.sh [path_to_ctf_code] [unison_full_path] [unison_version]
@@ -39,7 +39,7 @@ vagrant ssh-config > "$SSH_CONFIG"
 echo "[+] Creating unison profile"
 PROFILE="
 root = $CODE_PATH
-root = ssh://default//var/www/fbctf/
+root = ssh://default//var/www/nscctf/
 ignore = Name {.vagrant,.DS_Store,.sources,node_modules,settings.ini}
 
 prefer = $CODE_PATH
@@ -59,10 +59,10 @@ fi
 
 cd $UNISONDIR
 [[ -d "$UNISONDIR/.unison" ]] || mkdir "$UNISONDIR/.unison"
-echo "$PROFILE" > "$UNISONDIR/.unison/fbctf.prf"
+echo "$PROFILE" > "$UNISONDIR/.unison/nscctf.prf"
 
 echo "[+] Sync'ing project in the background..."
-$UNISON "fbctf" &
+$UNISON "nscctf" &
 
 echo "[+] Done"
 exit 0
